@@ -1,6 +1,6 @@
-const form = document.querySelector('form');
-const displayResults = document.getElementById('display-handshake');
-const refresh =document.getElementById('refresh')
+const form = document.querySelector('form')
+const displayResults = document.getElementById('display-handshake')
+const refresh = document.getElementById('refresh')
 
 refresh.innerHTML = '<span class="material-symbols-outlined" style="color: white; padding: 5px;">refresh</span>'
 
@@ -90,9 +90,9 @@ const checkRange = (valu, arre) => {
 }
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  let inputNumber = parseInt(e.target.num.value);
-  if (inputNumber == '' || inputNumber < 1) {
+  e.preventDefault()
+  const inputNumber = parseInt(e.target.num.value)
+  if (inputNumber === '' || inputNumber < 1) {
     alert('Input a number greater than 0')
   } else {
     displayResults.textContent = ''
