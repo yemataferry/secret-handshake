@@ -1,61 +1,74 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
 }
 
 body {
-  background-color: #b2b2e4;
+  display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url("/assets/images/blockchain-2850276_1280.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {
-  background-color: #a164df;
+  display: block;
+  width: 50%;
+  height: 50%;
+  background-color: #0e1f57;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+#display {
+  width: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 40vw;
-  height: 60vh;
-  margin: 40px auto;
+  margin: auto;
 }
 
-#input {
-  background-color: #fff;
-  font-size: 17px;
-  padding: 20px 45px;
-  border-radius: 1rem;
-}
-
-#btn {
-  background-color: rgb(201, 142, 201);
+.input-field {
+  width: 50%;
+  padding: 15px 5px;
   border-radius: 5px;
-  border: none;
+  border: 3px solid black;
+  text-align: center;
+  margin: 2rem;
+}
+
+.display-handshake {
+  min-height: 60px;
+  width: 100%;
+  background: #0f0f0f;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 1.5rem;
+  font-size: 25px;
+}
+
+#done {
+  background-color: #070758;
+  border-radius: 0.8rem;
+  padding: 6px;
   color: #fff;
-  margin: 1rem;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  font-family: inherit;
-  cursor: pointer;
 }
 
-#btn:hover {
-opacity: 0.9;
-background-color: #20e220;
-}
-
-#btn:focus {
-outline: none;
-}
-
-#result {
-  border: 1px solid black;
-  border-radius: 1rem;
-  background-color: #fff;
-  padding: 30px;
-  font-size: 16px;
-  width: 30vw;
+#refresh {
+  background-color: #070749;
 }
