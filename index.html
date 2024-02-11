@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Handshake</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="assets/styles/style.css">
     </head>
     <body>
-    <form id="input-text">
-        <input type="number" name = "num" placeholder="Input Secret Number" class="input-field" id="input">
-        <button type="submit" style="padding: 10px; background: #ececec; border: 3px solid #000000; border-radius: 5px" id="done">Shake Hand</button>
-    </form>
-    <section id="display">
-        <div class="display-HandShake" id="display-HandShake"></div>
-        <button class="shakehands" onclick="reload()">SHAKE HANDS</button>
-    </section>
+        <div class="container">
+            <form id="input-text">
+                <button id="refresh"></button>
+                <input type="number" name = "num" placeholder="Enter a number..." class="input-field" id="input">
+                <button type="submit" id="done">Shake Hand</button>
+            </form>
+            <section id="display">
+                <div class="display-handshake" id="display-handshake"></div>
+            </section>
+        </div>
     </body>
     <script src="assets/scripts/index.js"></script>
 </html>
